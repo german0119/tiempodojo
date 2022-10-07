@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TiempoDojo</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        <h1 class="title">DojoWheater</h1>
+        <nav>
+            <a href="#" onclick="showAlert();">Burbank</a>
+            <a href="#" onclick="showAlert();">Chicago</a>
+            <a href="#" onclick="showAlert();">Dallas</a>
+        </nav>
+    </header>
+    <main>
+        <div class="main_top">
+            <h2>San Jose</h2>
+            <p> show temperature in</p>
+            <select name="degrees" id="degrees" onchange="changeTemp(this);">
+                <option value="c">Cº</option>
+                <option value="f">Fº</option>
+            </select>
+        </div>
+        <div class="main_container">
+            <div class="col">
+                <h3>Today</h3><br><br>
+                <img src="assets/some_rain.png" alt="rain"><br><br>some rain<br><br>
+                <p> <span id="today_max" class="temp_max">24</span>º <span id="today_min"
+                        class="temp_min">18</span>º</p>
+            </div>
+            <div class="col">
+                <h3>Tomorow</h3><br><br>
+                <img src="assets/some_sun.png" alt="sun"><br><br>some sun<br><br>
+                <p> <span id="tomorrow_max" class="temp_max">27</span>º <span id="tomorrow_min"
+                        class="temp_min">19</span>º</p>
+            </div>
+            <div class="col">
+                <h3>Friday</h3><br><br>
+                <img src="assets/some_clouds.png" alt="clouds"><br><br>some clouds<br><br>
+                <p> <span id="friday_max" class="temp_max">21</span>º <span id="friday_min"
+                        class="temp_min">16</span>º</p>
+            </div>
+            <div class="col">
+                <h3>Saturday</h3><br><br>
+                <img src="assets/some_sun.png" alt="sun"><br><br>some sun<br><br>
+                <p> <span id="saturday_max" class="temp_max">26</span>º <span id="saturday_min"
+                        class="temp_min">21</span>º</p>
+            </div>
+        </div>
+    </main>
+    <div class="cookie_banner" id="cookie">
+        <img src="assets/cookie.png" alt="cookie">
+        <div class="text_cookie">
+            <h4>Stop! cookie time</h4>
+            <p>We used cookie (sadly not the edibles one) to personalize content and add, to provide social media feactures
+                and to analize our traffic </p>
+            <a href="#">Read More</a>
+            <button id="btn_accept" class="btn_accept" button onclick="myFunction()"">I Accept</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
